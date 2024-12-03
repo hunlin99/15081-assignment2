@@ -632,14 +632,14 @@ video {
   text-align: center;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-sm {
@@ -757,6 +757,16 @@ li {
   color: white;
   font-size: 2em;
   margin: 0;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+
+.latest{
+  padding: 3em;
 }
 
 .hover\:bg-blue-800:hover {
