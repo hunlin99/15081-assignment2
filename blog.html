@@ -25,7 +25,10 @@
     <main class="post-container">
         <div id="createPostModal" class="modal">
             <div class="modal-content">
-                <span class="close" id="closeModal">&times;</span>
+                <div class="close-container" id="closeModal">
+                    <div class="leftright"></div>
+                    <div class="rightleft"></div>
+                  </div>
                 <h2>Create a New Post</h2>
                 <form id="postForm">
                     <div>
@@ -40,7 +43,7 @@
                             <label class="post-heading" for="postCategory">
                                 Category
                             </label>
-                            <input type="text" class="postCategory" id="postCategory" name="postCategory"
+                            <input type="text" class="post-category" id="postCategory" name="postCategory"
                                 autocomplete="off" required>
                         </div>
                     </div>
@@ -48,7 +51,7 @@
                     <label class="post-heading" for="postDescription">
                         Description
                     </label>
-                    <textarea class="postDescription" id="postDescription" name="postDescription" autocomplete="off"
+                    <textarea class="post-description" id="postDescription" name="postDescription" autocomplete="off"
                         required>
                       </textarea>
 

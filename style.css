@@ -119,7 +119,6 @@ li {
     font-weight: bold;
     display: inline-block;
     margin-bottom: 10px;
-    cursor: pointer;
     transition: transform 0.3s;
 }
 
@@ -153,7 +152,7 @@ li {
 .modal-content {
     max-width: 50%;
     width: 100%;
-    height: 75%;
+    height: 100%;
     margin: auto;
     background: rgba(255, 255, 255, 0.67);
     border-radius: 16px;
@@ -168,6 +167,7 @@ li {
     text-align: center;
     animation: fadeIn 0.5s ease-in-out;
 }
+
 
 .modal.fadeOut {
     animation: fadeOut 0.5s ease-in-out;
@@ -194,21 +194,53 @@ li {
     }
 }
 
-
-.close {
+/*close button*/
+.close-container{
+    position: relative;
+    margin: auto;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    font-size: 25px;
-    color: #555;
-    transition: transform .2s;
-    display: inline-block;
-}
+  }
+  
+  .leftright{
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in;
+  }
+  
+  .rightleft{
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in;
+  }
 
-.close:hover {
-    -ms-transform: scale(1.7, 1.7);
-    -webkit-transform: scale(1.7, 1.7);
-    transform: scale(1.7, 1.7);
-}
+  .close-container:hover .leftright{
+    transform: rotate(-45deg);
+    background-color: tomato;
+  }
+  .close-container:hover .rightleft{
+    transform: rotate(45deg);
+    background-color: tomato;
+  }
+  .close-container:hover label{
+    opacity: 1;
+  }
 
+  .modal-content h2{
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
 
 .title,
 .category1 {
@@ -218,7 +250,7 @@ li {
 
 .title input,
 .category1 input,
-.postDescription {
+.post-description {
     width: 100%;
     max-width: 100%;
     padding: 12px;
@@ -229,20 +261,19 @@ li {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.postDescription {
+.post-description {
     height: 200px;
 }
 
-/*post-heading*/
-.postheading {
+
+.post-heading {
     color: #333;
     font-weight: bold;
 }
 
-/*post-title*/
-.postTitle:focus,
-.postCategory:focus,
-.postDescription:focus {
+.post-title:focus,
+.post-category:focus,
+.post-description:focus {
     outline: none;
     border-color: #3498db;
 }
@@ -263,7 +294,7 @@ li {
 }
 
 .post-message {
-    display: none;
+    /*display: none;*/
     position: fixed;
     top: 0;
     left: 50%;
