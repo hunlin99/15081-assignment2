@@ -10,6 +10,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+.blog-bd{
+    background-color: #2980b9;
+}
 
 header {
     display: flex;
@@ -51,35 +54,30 @@ li {
     padding: 15px;
 }
 
-.cover img {
-    background-color: gray;
-    height: 100vh;
-    width: 100vw;
-}
-
-.cover-brief {
-    position: relative;
-    left: 5em;
-    bottom: 15em;
-}
-
-.cover-title {
-    color: white;
-    font-size: 5em;
-    margin: 0;
-}
-
-.cover-content {
-    color: white;
-    font-size: 2em;
-    margin: 0;
-}
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    ;
     justify-content: space-between;
+}
+.cover{
+    background-image: url(./img/coverimg.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 15%;
+}
+.cover h2{
+    font-weight: bold;
+    font-size: 4em;
+}
+.cover p{
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .latest {

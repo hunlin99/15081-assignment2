@@ -22,7 +22,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const detailDescription =
         document.getElementById('detailDescription');
     const postImage =
-        document.getElementById('postImage'); 
+        document.getElementById('postImage');
     const detailImage =
-        document.getElementById('detailImage'); 
+        document.getElementById('detailImage');
+
+    createPostBtn.addEventListener('click', function () {
+        createPostModal.style.display = 'flex';
+    });
+
+    closeModal.addEventListener('click', function () {
+        // Add fadeOut class
+        createPostModal.classList.add('fadeOut');
+        setTimeout(() => {
+            createPostModal.style.display = 'none';
+            // Remove fadeOut class
+            createPostModal.classList.remove('fadeOut');
+        }, 500);
+    });
 });
