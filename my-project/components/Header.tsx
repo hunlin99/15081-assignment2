@@ -1,5 +1,7 @@
 // my-project/components/Header.tsx
 import React from "react";
+import Link from "next/link"; 
+
 
 const Header = () => {
     return (
@@ -9,12 +11,9 @@ const Header = () => {
             </h1>
             <nav>
                 <ul>
-                    <li><a href="../my-project/app/page.tsx">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="../my-project/app/blog-page/page.tsx">Posts</a></li>
-                    <li>
-                        <a href="#" id="createPostBtn">Create Post</a>
-                    </li>
+                <li><Link href="/">Home</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/blog-page">Posts</Link></li>
                 </ul>
             </nav>
         </header>
