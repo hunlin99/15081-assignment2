@@ -1,22 +1,11 @@
-import Image from "next/image";
-import './globals.css'; 
+import React from "react";
+import Header from "../components/Header"; // Import the Header component
+
 
 export default function Home() {
   return (
 <body>
-    <header>
-        <h1 className="logo">CUISINES<a href="#"></a></h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="./blog.html">Posts</a></li>
-                <li>
-                    <a href="#" id="createPostBtn">Create Post</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <Header />
     <section>
         <div className="cover">
             <h2>Cuisines around us</h2>
