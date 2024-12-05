@@ -85,5 +85,8 @@ li {
 }
 
 .latest {
-  padding: 3em;
+  padding: 2em;
+}
+.latest h1{
+  padding: 1em 0;
 }

@@ -15,7 +15,7 @@ export default function Home() {
     <section className="trend">
         <div className="latest">
             <h1 className="text-3xl font-bold">
-                Trending article
+            Article of the week<hr />
             </h1>
             <div className="grid-container">
                 <div
