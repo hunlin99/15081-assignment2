@@ -37,8 +37,13 @@ export default function Home() {
     const [selectedArticle, setSelectedArticle] = useState(articles[0]); // Default article
 
 
-    const handleOpenModal = () => {
-        setIsModalOpen(true);
+    const handleOpenModal = (articleId) => {
+        // Find the article corresponding to the clicked "Read More" button
+        const article = articles.find((a) => a.id === articleId);
+        if (article) {
+            setSelectedArticle(article); // Set the clicked article as selected
+            setIsModalOpen(true);
+        }
     };
 
     const handleCloseModal = () => {
