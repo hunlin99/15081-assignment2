@@ -139,7 +139,7 @@ li {
 /* Styles for the modal */
 .modal {
     z-index: 1000;
-    display: none;
+    /*display: none;*/
     position: fixed;
     top: 0;
     left: 0;

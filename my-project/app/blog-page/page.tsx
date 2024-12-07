@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Header from "../../components/Header";
+import CloseBtn from "../../components/CloseBtn";
 import "./page.css";
 
 export default function BlogPage() {
@@ -48,10 +49,8 @@ export default function BlogPage() {
             <div className="modal-content">
               <div className="posting-header">
                 <h2>Create a new post</h2>
-                <div className="close-container" onClick={handleCloseModal}>
-                  <div className="leftright"></div>
-                  <div className="rightleft"></div>
-                </div>
+                {/* Use CloseBtn Component */}
+                <CloseBtn onClose={handleCloseModal} />
               </div>
               <form id="postForm" onSubmit={handleSubmit}>
                 <div>
