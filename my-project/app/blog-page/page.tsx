@@ -55,6 +55,7 @@ export default function BlogPage() {
       title,
       author,
       description,
+      date: formattedDate,
       image: URL.createObjectURL(imageFile), // Use a preview of the uploaded image
     };
 
@@ -83,12 +84,12 @@ export default function BlogPage() {
     <body>
       <Header />
       <div className="btn-container">
-      <button
+        <button
           className="new-post-btn"
           onClick={handleOpenModal}>
           Create New Post
         </button></div>
-      <main className="post-container first-section">
+      <main className="post-container">
         {/* Render Post Cards */}
         {posts.map((post) => (
           <div
@@ -140,8 +141,8 @@ export default function BlogPage() {
 
         {/* Modal */}
         {isModalOpen && (
-          <div id="createPostModal" className={`modal ${isClosing ? "fadeOut" : ""}`} 
-          style={{ display: "flex" }}>
+          <div id="createPostModal" className={`modal ${isClosing ? "fadeOut" : ""}`}
+            style={{ display: "flex" }}>
             <div className="modal-content">
               <div className="posting-header">
                 <h2>Create a new post</h2>
@@ -186,16 +187,27 @@ export default function BlogPage() {
           </div>
         )}
 
-        {/*Detail Modal*/}
+        {/* Detail Modal */}
         {postDetails && (
           <div id="postDetailModal" className="modal" style={{ display: "flex" }}>
             <div className="modal-content">
-              <span className="close" onClick={handleCloseDetails}>
-                &times;
-              </span>
-              <h1>{postDetails.title}</h1>
-              <span>{postDetails.date}</span>
-              <p>{postDetails.description}</p>
+              <div className="posting-header">
+                <h3>{postDetails.title}</h3>
+                <CloseBtn onClose={handleCloseDetails} />
+              </div>
+              <div className="modal-article">
+                <p>
+                  <strong>Author:</strong> {postDetails.author}
+                  {" | "}
+                  <strong>Date:</strong> {postDetails.date}
+                </p>
+                <img
+                  src={postDetails.image}
+                  alt={postDetails.title}
+                  className="modal-image"
+                />
+                <p>{postDetails.description}</p>
+              </div>
             </div>
           </div>
         )}

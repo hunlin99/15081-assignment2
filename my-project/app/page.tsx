@@ -137,13 +137,14 @@ export default function Home() {
                     </div>
                 </div>
             </section >
+
+            {/*Detail Modal*/}
             {isModalOpen && (
                 <div id="createPostModal" className={`modal ${isClosing ? "fadeOut" : ""}`}
                     style={{ display: "flex" }}>
                     <div className="modal-content">
                         <div className="posting-header">
                             <h2>Recommendation of the week</h2>
-                            {/* Use CloseBtn Component */}
                             <CloseBtn onClose={handleCloseModal} />
                         </div>
                         <div className="modal-article">
@@ -161,7 +162,6 @@ export default function Home() {
                     </div>
                 </div>
             )};
-            <script src="./script.js"></script>
         </body >
     );
 }
