@@ -242,3 +242,17 @@
 .delete-post:hover {
     background-color: #c0392b;
 }
+
+@media (max-width: 750px) {
+    .post-container {
+      display: flex;
+      flex-direction: column; /* Stack posts vertically */
+      align-items: center;   /* Center posts horizontally */
+      gap: 1rem;             /* Add space between posts */
+    }
+  
+    .post-container > div {
+      width: 100%;           /* Ensure each post takes full width */
+      max-width: 90%;        /* Add some padding for better appearance */
+    }
+  }
