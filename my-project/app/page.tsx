@@ -57,7 +57,7 @@ export default function Home() {
     return (
         <body>
             <Header />
-            <section>
+            <section className="first-section">
                 <div className="cover">
                     <h2>Cuisines around us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
