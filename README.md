@@ -48,19 +48,19 @@ Install npm (comes with Node.js) or Yarn.
 
 Clone the repository:
 
-git clone [<repository-url>](https://github.com/hunlin99/15081-assignment2.git)
+`git clone https://github.com/hunlin99/15081-assignment2.git`
 
 **Navigate to the project directory:**
 
-cd my-project
+`cd my-project`
 
 **Install dependencies:**
 
-npm install
+`npm install`
 
 **Run the development server:**
 
-npm run dev
+`npm run dev`
 
 Open http://localhost:3000 in your browser to view the application.  
 
