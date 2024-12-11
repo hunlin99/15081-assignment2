@@ -36,6 +36,34 @@ Modal-based form for creating new posts.
 
 Optimized layout for both desktop and mobile devices.  
 
+## How to Run the Project Locally
+
+**Prerequisites**
+
+Install Node.js (v14 or higher).
+
+Install npm (comes with Node.js) or Yarn.
+
+**Installation**
+
+Clone the repository:
+
+git clone <repository-url>
+
+**Navigate to the project directory:**
+
+cd <project-directory>
+
+**Install dependencies:**
+
+npm install
+
+**Run the development server:**
+
+npm run dev
+
+Open http://localhost:3000 in your browser to view the application.  
+
 ## Future Improvements
 
 **Category Filters**
