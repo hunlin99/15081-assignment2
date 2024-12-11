@@ -2,7 +2,7 @@
 
 ## Overview
 
-Cuisine Around Us is a React-based web application designed to share culinary experiences and recommendations from users across different areas. The platform provides travelers, newcomers, and locals with personalized insights into must-try dishes and venues. This project was built as part of Assignment 3: Complex Framework-Based Website for learning and practicing React and Next.js.
+Cuisine Around Us is a React-based web application designed to share culinary experiences and recommendations from users across different areas. The platform provides travelers, newcomers, and locals with personalized insights into must-try dishes and venues. This project was built as part of Assignment 3: Complex Framework-Based Website for learning and practicing React and Next.js.  
 
 ## Technologies Used
 
@@ -12,11 +12,9 @@ Next.js for server-side rendering and routing.
 
 Tailwind CSS for styling and responsiveness.
 
-GitHub Pages for deployment.
-
 JavaScript (ES6+) for logic and interactivity.
 
-HTML5/CSS3 for structure and layout.
+HTML5/CSS3 for structure and layout.  
 
 ## Features
 
@@ -36,7 +34,7 @@ Modal-based form for creating new posts.
 
 **Responsive Design**
 
-Optimized layout for both desktop and mobile devices.
+Optimized layout for both desktop and mobile devices.  
 
 ## Future Improvements
 
@@ -54,7 +52,7 @@ Allow users to interact with posts through likes and comments.
 
 **Backend Integration**
 
-Connect to a backend API for storing and retrieving data persistently.
+Connect to a backend API for storing and retrieving data persistently.  
 
 ## Contact
 
