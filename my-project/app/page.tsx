@@ -64,10 +64,14 @@ export default function Home() {
                     <p>Savor the Flavors, Discover the Stories</p>
                 </div>
             </section>
+            <section className="about-section">
+                <h2>About The Platform</h2>
+                <p>Welcome to Cuisine Around Us, where people from all areas share their favorite dishes. Whether you're a traveler, newcomer, or local, discover new flavors and the stories behind them. Join us, savor the flavors, and explore the world through food!</p>
+            </section>
             <section className="trend">
                 <div className="latest">
-                    <h1 className="text-3xl font-bold">
-                        Article of the week<hr />
+                    <h1 className="text-3xl font-bold text-center">
+                        Article of The Week<hr />
                     </h1>
                     <div className="grid-container">
                         {/* Card 1 */}

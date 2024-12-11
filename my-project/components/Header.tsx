@@ -1,18 +1,22 @@
 import React from "react";
-import Link from "next/link"; 
-
-
+import Link from "next/link";
+import { Merienda } from 'next/font/google'
+const merienda = Merienda({
+    subsets: ['latin'],
+    display: 'swap',
+  })
+  
 const Header = () => {
     return (
         <header>
             <h1 className="logo">
-                CUISINES<a href="#"></a>
+                <Link href="/">CUISINES</Link>
             </h1>
             <nav>
                 <ul>
-                <li><Link href="/">Home</Link></li>
-                    <li><Link href="/contact-page">Contact</Link></li>
+                    <li><Link href="/">Home</Link></li>
                     <li><Link href="/blog-page">Posts</Link></li>
+                    <li><Link href="/contact-page">Contact</Link></li>
                 </ul>
             </nav>
         </header>
