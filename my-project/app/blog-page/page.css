@@ -1,7 +1,20 @@
+:root {
+    --text-color: #344D66;
+    --primary-color: #FBF0DF;
+    --secondary-color: #FFBCA3;
+  }
+
+  main.post-container {
+    min-height: calc(105vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .btn-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10%;
+    right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +22,8 @@
 }
 
 .new-post-btn {
-    background-color: #3498db;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--primary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 50%;
@@ -25,7 +38,8 @@
 }
 
 .new-post-btn:hover {
-    background-color: #2980b9;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 .post-container {
     margin-left: 5%;
@@ -38,26 +52,14 @@
 }
 
 .post-box {
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
     border-radius: 40px;
     text-align: center;
     padding: 15px;
 }
 
-.category {
-    background-color: #3498db;
-    border: 1px solid #ccc;
-    border-radius: 13px;
-    font-size: 16px;
-    color: white;
-    padding: 5px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
 
 .post-title {
-    color: #333;
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
@@ -67,14 +69,12 @@
 }
 
 .post-date {
-    color: #777;
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
 .post-description {
     margin-top: 5px;
-    color: #555;
     line-height: 1.5;
 }
 
@@ -176,7 +176,6 @@
 
 
 .post-heading {
-    color: #333;
     font-weight: bold;
 }
 
@@ -184,12 +183,12 @@
 .post-category:focus,
 .post-description:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: var(--text-color);
 }
 
 .postSubmitBtn {
-    background-color: #3498db;
-    color: white;
+    background-color: var(--text-color);
+    color: var(--primary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -199,25 +198,8 @@
 }
 
 .postSubmitBtn:hover {
-    background-color: #2980b9;
-}
-
-
-
-.load-more {
-    display: inline-block;
-    color: #3498db;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: transform 0.3s;
-}
-
-.load-more:hover {
-    color: #2980b9;
-    -ms-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 #detailTitle {
@@ -226,22 +208,19 @@
     margin-top: 10px;
 }
 
-.delete-post {
-    background-color: #e74c3c;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-right: 120px;
+.delete-btn {
+    background-color: white;
+    border: solid var(--secondary-color);
+    color: var(--secondary-color);
     transition: background-color 0.3s;
 }
 
-.delete-post:hover {
-    background-color: #c0392b;
+.delete-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transform: none;
 }
+
 
 @media (max-width: 750px) {
     .post-container {

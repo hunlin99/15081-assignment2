@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Header from "../components/Header"; // Import the Header component
+import Header from "../components/Header"; 
+import Footer from "../components/Footer"; 
 import CloseBtn from "../components/CloseBtn";
 
 const articles = [
@@ -75,12 +76,11 @@ export default function Home() {
                                 className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                 <img className="rounded-t-lg w-full h-48 object-cover" src={article.image} alt={article.title} />
                                 <div className="p-5">
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{article.title}
-                                    </h5>
-                                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Industrial Loft Style cafe. Serve
+                                    <h5 className="mb-2 text-2xl font-bold tracking-tight" style={{ color: "#344D66" }}>{article.title}</h5>
+                                    <p className="mb-3 font-normal" style={{ color: "#344D66" }}>Industrial Loft Style cafe. Serve
                                         {article.article.substring(0, 60)}...</p>
                                     <button
-                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg transition-transform duration-300"
                                         onClick={() => handleOpenModal(article.id)}>
                                         Read more
                                         <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
@@ -120,6 +120,8 @@ export default function Home() {
                     </div>
                 </div>
             )};
+            <Footer />
+
         </body >
     );
 }
