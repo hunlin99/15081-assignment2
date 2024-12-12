@@ -18,8 +18,8 @@ interface Post {
 export default function BlogPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
-  const [posts, setPosts] = useState([]); // State to hold all posts
-  const [postDetails, setPostDetails] = useState(null); // State for post detail modal
+  const [posts, setPosts] = useState<Post[]>([]); // Explicitly typed as Post[]
+  const [postDetails, setPostDetails] = useState<Post | null>(null); // State for post detail modal
 
   const handleOpenModal = () => setIsModalOpen(true);
 
@@ -69,7 +69,7 @@ export default function BlogPage() {
 
   const handleViewDetails = (postId: number) => {
     const selectedPost = posts.find((post) => post.id === postId);
-    setPostDetails(selectedPost || null);
+    setPostDetails(selectedPost ?? null);
   };
 
   const handleDeletePost = (postId: number) => {

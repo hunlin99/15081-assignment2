@@ -8,7 +8,7 @@ const merienda = Merienda({
   
 const Header = () => {
     return (
-        <header>
+        <header className={merienda.className}>
             <h1 className="logo">
                 <Link href="/">CUISINES</Link>
             </h1>

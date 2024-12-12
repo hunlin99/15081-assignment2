@@ -38,7 +38,7 @@ export default function Home() {
     const [selectedArticle, setSelectedArticle] = useState(articles[0]); // Default article
 
 
-    const handleOpenModal = (articleId) => {
+    const handleOpenModal = (articleId: number) => {
         // Find the article corresponding to the clicked "Read More" button
         const article = articles.find((a) => a.id === articleId);
         if (article) {
@@ -66,7 +66,7 @@ export default function Home() {
             </section>
             <section className="about-section">
                 <h2>About The Platform</h2>
-                <p>Welcome to Cuisine Around Us, where people from all areas share their favorite dishes. Whether you're a traveler, newcomer, or local, discover new flavors and the stories behind them. Join us, savor the flavors, and explore the world through food!</p>
+                <p>Welcome to Cuisine Around Us, where people from all areas share their favorite dishes. Whether you&apos;re a traveler, newcomer, or local, discover new flavors and the stories behind them. Join us, savor the flavors, and explore the world through food!</p>
             </section>
             <section className="trend">
                 <div className="latest">
