@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer"; 
 import CloseBtn from "../../components/CloseBtn";
 import "./page.css";
+import '../globals.css';
 
 interface Post {
   id: number;

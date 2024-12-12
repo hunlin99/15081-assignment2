@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Merienda } from 'next/font/google'
+import './globals.css';
+
 const merienda = Merienda({
     subsets: ['latin'],
     display: 'swap',
